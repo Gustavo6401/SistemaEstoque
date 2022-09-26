@@ -1,0 +1,12 @@
+C:\Users\Gustavo\Documents\SistemaEstoque\SistemaEstoque\Estoque.Services\bin\Debug\net6.0\Estoque.Services.deps.json
+C:\Users\Gustavo\Documents\SistemaEstoque\SistemaEstoque\Estoque.Services\bin\Debug\net6.0\Estoque.Services.dll
+C:\Users\Gustavo\Documents\SistemaEstoque\SistemaEstoque\Estoque.Services\bin\Debug\net6.0\Estoque.Services.pdb
+C:\Users\Gustavo\Documents\SistemaEstoque\SistemaEstoque\Estoque.Services\obj\Debug\net6.0\Estoque.Services.csproj.AssemblyReference.cache
+C:\Users\Gustavo\Documents\SistemaEstoque\SistemaEstoque\Estoque.Services\obj\Debug\net6.0\Estoque.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gustavo\Documents\SistemaEstoque\SistemaEstoque\Estoque.Services\obj\Debug\net6.0\Estoque.Services.AssemblyInfoInputs.cache
+C:\Users\Gustavo\Documents\SistemaEstoque\SistemaEstoque\Estoque.Services\obj\Debug\net6.0\Estoque.Services.AssemblyInfo.cs
+C:\Users\Gustavo\Documents\SistemaEstoque\SistemaEstoque\Estoque.Services\obj\Debug\net6.0\Estoque.Services.csproj.CoreCompileInputs.cache
+C:\Users\Gustavo\Documents\SistemaEstoque\SistemaEstoque\Estoque.Services\obj\Debug\net6.0\Estoque.Services.dll
+C:\Users\Gustavo\Documents\SistemaEstoque\SistemaEstoque\Estoque.Services\obj\Debug\net6.0\refint\Estoque.Services.dll
+C:\Users\Gustavo\Documents\SistemaEstoque\SistemaEstoque\Estoque.Services\obj\Debug\net6.0\Estoque.Services.pdb
+C:\Users\Gustavo\Documents\SistemaEstoque\SistemaEstoque\Estoque.Services\obj\Debug\net6.0\ref\Estoque.Services.dll

@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Login";
+    Layout = "_Layout.cshtml";
+}
+
+<form asp-controller="Usuario" asp-action="Index" method="post">
+    <label>Nome Usuario:</label>
+    <input type=text name="Nome" />
+
+    <label>Senha:</label>
+    <input type=password name="Senha" />
+
+    <input type=submit value=Login class="btn btn-danger"/>
+</form>
+
+<a asp-action=Create>Cadastrar Usuário</a>
+
+@if(ViewBag.Message != null)
+{
+    <script>
+        function login() {
+            return alert(@ViewBag.Message)
+        }
+    </script>
+}

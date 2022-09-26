@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Estoque</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Estoque.Presentation.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <article>
+        <header>
+            <ul class="navbar-vertical">
+                <li>
+                    <a asp-area="" asp-controller="Home" asp-action="Index">Estoque</a>
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="Equipamento" asp-action="Index">Estoque</a>
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="Solicitacao" asp-action="Index">Solicitações</a>
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="Solicitante" asp-action="Index">Solicitante</a>
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="Equipamento" asp-action="Index">Equipamento</a>
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="Acesso" asp-action="Edit">Logout</a>
+                </li>
+            </ul>
+        </header>
+        <div>
+            <main role="main">
+                @RenderBody()
+            </main>
+            <footer>
+                <div class="container">
+                &copy; 2022 - Estoque.Presentation - 
+                <input type="submit" value="Política de Privacidade" class="btn btn-info" asp-action="Privacy" asp-controller="Privacy" />
+            </div>
+    </footer>
+        </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    </article>
+</body>
+</html>

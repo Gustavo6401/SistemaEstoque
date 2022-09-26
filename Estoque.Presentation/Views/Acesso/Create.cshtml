@@ -1,0 +1,36 @@
+﻿@model Estoque.Presentation.Models.Acesso;
+
+@{
+    ViewData["Title"] = "Cadastrar Acesso";
+    Layout = "_Layout.cshtml";
+}
+
+<section class="formulario">
+    <form asp-action="Create" method="post">
+        <div class=form-group>
+            <label class="control-label">Nome do Usuário</label>
+            <input type="text" class=form-control name="user" />
+            <span class=text-danger></span>
+        </div>
+        <div class=form-group>
+            <label class="control-label">Senha</label>
+            <input type="password" class=form-control name="senha" />
+            <span class=text-danger></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Fazer Login" class="btn btn-primary" asp-action=Create method=post />
+            <span class="text-danger"></span>
+        </div>
+        <div>
+            <a class="btn btn-warning" asp-action=Create asp-controller="Usuario">Cadastrar Usuário</a>
+        </div>
+    </form>
+</section>
+<section class="barra-login">
+    <img src="~/img/original-ef15ee3faeff0b92c396181c2c6b115b.jpeg">
+</section>
+
+<script>
+
+    dataAgora = () => new Date.now();
+</script>

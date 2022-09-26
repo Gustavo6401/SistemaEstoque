@@ -1,0 +1,108 @@
+:root {
+    --azul-escuro: #1861ac;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* Barra de navegação */
+
+.navbar-vertical {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15vw;
+    background-color: var(--azul-escuro);
+    color: white;
+    height: 100vh;
+    position: fixed;
+    overflow: auto;
+    display: block;
+}
+
+.navbar-vertical li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.navbar-vertical li a {
+    padding: 8px 16px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-vertical li a:hover {
+    background-color: black;
+    color: red;
+}
+
+/* Corpo */
+
+article div {
+    width: 82vw;
+    float: right;
+    margin-right: 1vw;
+    margin-top: 1vw;
+}
+
+/* Tela de Login */
+
+.tela-login {
+    flex-direction: row;
+    background-color: gray;
+}
+
+.login {
+    flex-direction: row;
+}
+
+.formulario {
+    float: left;
+    width: 48vw;
+    height: 100vh;
+    background-color: gray;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+    .formulario form {
+        width: 14vw;
+    }
+
+.barra-login {
+    background-color: var(--azul-escuro);
+    width: 50vw;
+    height: 100vh;
+    float: right;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.barra-login img {
+    width: 250px;
+    height: 169px;
+    background-color: var(--azul-escuro);
+}

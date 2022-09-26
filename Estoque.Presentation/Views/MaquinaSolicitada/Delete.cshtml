@@ -1,0 +1,37 @@
+﻿@model Estoque.Domain.Entities.MaquinaSolicitada;
+
+@{
+    ViewData["Title"] = "Deletar Cadastro";
+}
+
+<h1>Deletar</h1>
+
+@if(ViewBag.Erro != null)
+{
+    <h4>@ViewBag.Erro</h4>
+}
+
+<h3>Você Tem Certeza que quer deletar esses dados?</h3>
+<div>
+    <h4>Equipamento Solicitado</h4>
+    <hr />
+    <dl class=row>
+        <dt class=col-sm-2>Id</dt>
+        <dd class=col-sm-10>@Html.DisplayFor(model => model.Id)</dd>
+
+        <dt class=col-sm-2>Quantidade Solicitada</dt>
+        <dd class=col-sm-10>@Html.DisplayFor(model => model.QtdSolicitada)</dd>
+
+        <dt class=col-sm-2>Id do Solicitante</dt>
+        <dd class=col-sm-10>@Html.DisplayFor(model => model.SolicitanteId)</dd>
+
+        <dt class=col-sm-2>Id do Equipamento</dt>
+        <dd class=col-sm-10>@Html.DisplayFor(model => model.EquipamentoId)</dd>
+    </dl>
+
+    <form asp-action=DeleteConfirmed>
+        <input type="hidden" asp-for=Id />
+        <input type="submit" value="Excluir Cadastro" class="btn btn-danger" /> | 
+        <a class="btn btn-success" asp-action=Index asp-controller=Solicitacao>Voltar para a Página Inicial</a>
+    </form>
+</div>

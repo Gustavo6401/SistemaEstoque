@@ -1,0 +1,53 @@
+﻿@model Estoque.Presentation.Models.Equipamento
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Cadastrar</h1>
+
+@if (ViewBag.Erro != null)
+{
+    <h4>@ViewBag.Erro</h4>
+}
+
+<h4>Equipamento</h4>
+<hr />
+<form asp-action="Create">
+    <div class=form-group>
+        <label asp-for="Nome" class="control-label">Nome do Equipamento</label>
+        <input asp-for=Nome class=form-control />
+        <span asp-validation-for=Nome class=text-danger></span>
+    </div>
+    <div class=form-group>
+        <label asp-for="QtdEstoque" class="control-label">Quantidade Disponível</label>
+        <input asp-for=QtdEstoque type="number" class=form-control />
+        <span asp-validation-for=QtdEstoque class=text-danger></span>
+    </div>
+    <div class=form-group>
+        <label asp-for="QtdTotal" class="control-label">Quantidade Total</label>
+        <input asp-for=QtdTotal type="number" class=form-control />
+        <span asp-validation-for=QtdTotal class=text-danger></span>
+    </div>
+    <div class=form-group>
+        <label asp-for="Site" class="control-label">Site</label>
+        <input asp-for=Site type="text" class=form-control />
+        <span asp-validation-for=Site class=text-danger></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Cadastrar Equipamento" class="btn btn-primary" asp-action=Create method=post />
+    </div>
+</form>
+
+<div>
+    <br />
+    <a class="btn btn-dark" asp-action=Index>Voltar para a Lista</a>
+    <br />
+    <a class="btn btn-light" asp-action=Index asp-controller=Home>Voltar para a Página Inicial</a>
+</div>
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}

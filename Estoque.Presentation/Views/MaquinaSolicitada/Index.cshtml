@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Estoque.Domain.Entities.MaquinaSolicitada>
+
+@{
+    ViewData["Title"] = "Lista de Equipamentos";
+}
+
+@if(ViewBag.Erro != null)
+{
+    <h4>@ViewBag.Erro</h4>
+}
+
+<form>
+    <h1>Lista de Equipamentos</h1>
+
+    <p>
+        <a asp-action="Create" asp-controller="MaquinaSolicitada">Cadastrar Novo</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome do Equipamento</th>
+                <th>Quantidade Solicitada</th>
+                <th>Nome do Solicitante</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.EquipamentoId)</td>
+                    <td>@Html.DisplayFor(modelItem => item.QtdSolicitada)</td>
+                    <td>@Html.DisplayFor(modelItem => item.SolicitanteId)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</form>
